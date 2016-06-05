@@ -1,0 +1,1340 @@
+/*POLICES*/
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../font/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../font/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../font/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../font/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: 'Luxia';
+    src: url(../font/Luxia.otf);
+}
+
+
+body {
+    font-family: 'Roboto-Regular';
+    width: 100%;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+}
+
+.ul-1 {
+    float: left;
+    padding: 50px;
+    font-size: 15px;
+    font-family: 'Luxia';
+
+}
+.ul-1 li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+.ul-2 {
+    float: right;
+    padding: 50px;
+    font-size: 15px;
+    font-family: 'Roboto-Light';
+}
+
+.ul-2 li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    letter-spacing: 2px;
+}
+
+.connect {
+        color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/*MENU BURGER*/
+.nav-burger {
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+        width: 100%;
+        height: 100px;
+    background: none;
+    z-index: 10000000;
+}
+
+.burger-menu {
+    position: relative;
+     top: 30px;
+    left: 20px;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.burger {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+}
+
+.burger .menu-liste {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    width: 320px;
+    background: #404040;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.burger ul li {
+    padding-left: 10%;
+    line-height: 40px;
+    overflow: hidden;
+        display: block;
+}
+
+.burger ul li a {
+    display: block;
+    width: 90%;
+    padding: 5%;
+    height: 40px;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.burger ul li:hover {
+    background: white;
+}
+
+.burger ul li a:hover {
+    color:#1b1511;
+}
+
+.nav-burger h1 a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+    position: relative;
+    top: -8px;
+    right: -450px;
+}
+
+
+.burger::before {
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 5px;
+    top: 15px;
+    content: "";
+    display: block;
+}
+
+.burger::after {
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 5px;
+    bottom: 15px;
+    content: "";
+    display: block;
+}
+
+.burger::after, .burger::before, .burger {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.burger-menu.menu-on .burger::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+}
+
+.burger-menu.menu-on .burger::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+}
+
+.burger-menu.menu-on .burger {
+    background: rgba(111, 111, 111, .0);
+}
+
+
+.nav-burger .connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*POP UP*/
+.pop-up {
+    text-align: center;
+    position: fixed;
+    z-index: 100000000003;
+    top: 10vh;
+    left: 26%;
+    padding: 50px;
+    z-index: 99999;
+    font-size: 1.2em;
+    background: #fff;
+    color: #000;
+    width: 40%;
+}
+
+.line {
+    margin: 40px 0;
+    border-bottom: 1px solid #000;
+}
+
+.pop-up h2 img {
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+.pop-up p {
+    padding: 25px;
+}
+
+.pop-up input {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.voile {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+}
+
+.cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.log-facebook {
+    font-family: helvetica;
+    background-color: #3B5998;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 105px;
+    border: none;
+}
+
+.login {
+    background-color: #fe5f5b;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 105px;
+    margin: 15px auto;
+    border: none;
+}
+
+/*PAGE ONE - CAROUSSEL*/
+.jssorb05 {
+    position: absolute;
+    top: 590px;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('../img/b055.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    bottom:16px;right:16px;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+.jssora22l, .jssora22r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('../img/a22.png') center center no-repeat;
+    overflow: hidden;
+}
+.jssora22l { background-position: -10px -31px; }
+.jssora22r { background-position: -70px -31px; }
+.jssora22l:hover { background-position: -130px -31px; }
+.jssora22r:hover { background-position: -190px -31px; }
+.jssora22l.jssora22ldn { background-position: -250px -31px; }
+.jssora22r.jssora22rdn { background-position: -310px -31px; }
+
+#jssor_1 {
+    position: relative; 
+    margin: 0 auto; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    height: 110vh; 
+    overflow: hidden; 
+    visibility: hidden;
+}
+#slide {
+    cursor: default; 
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    height: 110vh; 
+    overflow: hidden;
+}
+    /*SLIDE 1*/
+    .content-s1,.content-s2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        line-height: 2;
+        color: white;
+    }
+
+    .slide1 {
+        background: url(../img/blue.jpg) no-repeat;
+    }
+
+    .slide2 {
+        background: url(../img/red2.jpg) no-repeat;
+    }
+
+    .slide3 {
+        background: url(../img/fraise.jpg) no-repeat;
+    }
+
+
+
+    .content-s1 h1{
+        letter-spacing: 10px;
+        font-family: 'Luxia';
+        font-size: 30px;
+        padding-top: 30vh;
+        text-transform: uppercase;
+    }
+
+    .content-s1 p {
+        padding-bottom: 20vh;
+        letter-spacing: 3px;
+    }
+
+    .content-s1 img {
+        display: inline-block;
+        width: 235px;
+        margin-right: 10px;
+    }
+
+    /*SLIDE 2*/
+    .content-s2 {
+        position: absolute;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        line-height: 2;
+        color: white;
+            text-align: center;
+    }
+    .content-s2 h1 {
+        letter-spacing: 10px;
+        font-size: 30px;
+        padding-top: 37vh;
+        padding-bottom: 5vh;
+    }
+    .content-s2 p {
+        width: 360px;
+        font-size: 16px;
+        margin: auto;
+    }
+    .content-s3 {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        line-height: 2;
+        color: white;
+        margin: auto;
+            text-align: center;
+    }
+
+    .content-s3 h1 {
+        font-family: 'Roboto-Bold';
+        font-size: 40px;
+        padding-top: 250px;
+        letter-spacing: 5px;
+    }
+
+    .content-s3 p{
+        width: 490px;
+        margin: auto;
+        letter-spacing: 3px;
+        line-height: 1.7;
+    }
+
+/*PAGE TWO*/
+.page-two {
+    width: 100%;
+    display: flex;
+}
+
+.page-two a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+}
+
+.page-two h3 {
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+    z-index: 50;
+}
+
+.page-two img {
+    width: 101%;
+}
+
+.menu-1,.menu-2,.menu-3 {
+    display: inline-flex;
+    width: 447px;
+    height: 723px;
+}
+
+.menu-1:hover,.menu-2:hover,.menu-3:hover {
+    transition:0.5s;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+
+.menu-1:not(:hover),.menu-2:not(:hover),.menu-3:not(:hover) {
+    transition:0.5s;
+}
+
+
+.menu-1 {
+}
+
+.menu-2 {
+
+}
+
+.menu-3 {
+}
+
+
+/*PAGE THREE*/
+.page-three {
+
+}
+
+.guy {
+    padding:20px; 
+}
+
+.balance-1 {
+    width: 40%;
+    float: left;
+    padding: 20vh 0;
+}
+
+.balance-1 img {
+    margin-left: 15%;
+}
+
+.avis {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 2;
+    padding-top: 50px;
+}
+
+.avis p {
+    font-family: serif;
+}
+
+.avis small {
+    text-align: right;
+    font-style: italic;
+    position: relative;
+    right: -20%;
+    line-height: 5;
+}
+
+.info {
+    padding: 25vh 20vh 0 0;
+    width: 40%;
+    float: right;
+    line-height: 2;
+    text-align: right;
+}
+
+.balance-2 {
+    display: none;
+}
+
+.info h2 {
+    padding-bottom: 20vh;
+    letter-spacing: 3px;
+}
+
+.info p {
+    letter-spacing: 3px;
+}
+
+/*PAGE SIX*/
+.page-six {
+    clear: both;
+    text-align: center;
+}
+
+.page-six h1 {
+    font-size: 30px;
+    padding: 0px 0 90px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.page-six ul {
+    text-align: center;
+    width: 250px;
+    border: 7px solid black;
+    border-radius: 50px;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.page-six ul li {
+
+}
+
+.page-six ul li img {
+    width: 100px;
+    padding: 30px;
+}
+
+.page-six ul li p {
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+    .book {
+
+    }
+    .mixe {
+
+    }
+    .calc {
+
+    }
+    .cup {
+
+    }
+    .phone {
+        margin: auto;
+    }
+
+.arrow-1,.arrow-2 {
+    width: 20%;
+    padding: 2% 5%;
+}
+
+.book,.arrow-1,.mixe {
+    display: inline-block;
+}
+
+.calc,.arrow-2,.cup {
+    display: inline-block;
+}
+
+/*PAGE SEVEN*/
+.page-seven {
+    background: #ecebeb;
+    padding: 0 150px 150px 150px;
+}
+
+.page-seven h1 {
+    line-height: 10;
+    font-size: 20px;
+    font-family: 'Roboto-Black';
+}
+
+.page-seven p {
+    padding-bottom: 12vh;
+    width: 400px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.page-seven ul {
+    float: right;
+}
+
+.page-seven ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.page-seven img{
+        width: 235px;
+}
+
+/*PAGE EIGHT*/
+.page-eight {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.winner {
+    z-index: -1000;
+    position: absolute;
+    bottom: 12%;
+    left: 42%;
+    width: 16%;
+}
+
+.concours p,.concours img {
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+
+.concours img {
+    padding: 50px;
+}
+
+.concours p {
+    position: relative;
+    top:-65px;
+    font-weight: bold;
+}
+
+.produits img {
+    width: 300px;
+}
+
+.produits section article {
+    display: inline-table;
+    width: 320px;
+        padding: 5% 10%;
+}
+
+.produits section article h2 {
+    padding: 10%;
+}
+
+.produits section article p {
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.footer {
+    background: #404040;
+    padding: 50px;
+}
+
+.footer form {
+    padding: 80px 200px 40px 0;
+    text-align: right;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-table;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 100px;
+}
+
+footer input {
+    margin: 0 auto 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    width: 300px;
+}
+
+footer img {
+    display: inline-table;
+    padding-left: 25px;
+}
+
+.social {
+    float: right;
+    margin-right: 200px;
+}
+
+
+/*-------------RESPONSIVE---------------*/
+@media screen and (max-width: 1175px) {
+    /*HEADER*/
+    .desktop {
+        display: none;
+    }
+
+    .nav-burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+
+    .nav-burger h1 a {
+        display: none;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 5px;
+        position: relative;
+        top: -8px;
+        right: -36%;
+    }
+
+    nav.nav-burger > h1 {
+        font-size: 20px;
+        font-family: 'Luxia';        
+    }
+
+    .connect {
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    .burger-menu {
+        position: relative;
+        top: 18px;
+        left: 0px;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .burger {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        bottom: 15px;
+    }    
+    .burger::before {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        top: 10px;
+        bottom: 15px;
+    }    
+    .burger::after {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        bottom: 10px;
+    }
+
+    /*PAGE ONE*/
+    .content-s1, .content-s2 {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        line-height: 2;
+        color: white;
+        text-align: center;
+    }
+
+    .content-s1 img {
+        width: 20%;
+        margin:0 50px;
+    }
+
+    .slide1 {
+        background: url(../img/blue2.jpg) no-repeat;
+    }
+
+
+    /*PAGE TWO*/
+    .page-two {
+        height: auto;
+    }
+
+    .page-two img {
+        width: 100%;
+        -ms-transform: skewY(0);
+        -webkit-transform: skewY(0);
+        transform: skewY(0);
+    }
+
+    .page-two h3 {
+        bottom: 90px;
+    }
+
+    .menu-1, .menu-2, .menu-3 {
+        position: static;
+            height: auto;
+    }
+
+
+    /*PAGE THREE*/
+    .avis {
+        width: 90%;
+        margin: auto;
+    }
+
+    .guy {
+        padding: 2%;
+        width: 20px;
+    }
+
+    .info {
+        padding: 0;
+        padding-top: 15vh;
+        width: 80%;
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+
+    .balance-1 {
+        display: none;
+    }    
+    .balance-2 {
+        display: block;
+        margin: auto;
+        width: 60%;
+        padding-bottom: 10%;
+    }
+
+    /*PAGE FOUR*/
+    .book, .mixe, .calc, .cup {
+        margin-left: 0;
+        padding-top: 10%;
+    }
+
+    .info h2 {
+        font-family: 'Roboto-Black';
+        padding-bottom: 10vh;
+        letter-spacing: 3px;
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+
+    .info p {
+        letter-spacing: 2px;
+        line-height: 1.5;
+        padding-bottom: 15vh;
+    }
+
+    /*PAGE SIX*/
+    .page-six {
+        text-align: center;
+    }
+
+    .page-six h1 {
+        padding: 0px 0 5%;
+    }
+    .page-six ul li {
+        margin: 10px auto;
+    }
+
+    .page-six ul li p {
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+    .page-six ul li img {
+        width: 100px;
+        padding: 30px;
+    }
+
+    .winner {
+        z-index: -1000;
+        position: absolute;
+        bottom: 18%;
+        left: 42%;
+    }
+
+
+    /*PAGE SEVEN*/
+    .page-seven {
+        background: #ecebeb;
+        padding: 50px;
+        text-align: center;
+    }   
+
+    .page-seven p {
+        padding-bottom: 12vh;
+        width: 80%;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        margin: auto;
+    }
+
+    .page-seven ul {
+        float: none;
+    }
+
+    .page-seven h1 {
+        padding: 10px 0 60px 0;
+        line-height: inherit;
+        font-size: 20px;
+        font-family: 'Roboto-Black';
+    }
+
+
+
+    /*FOOTER*/
+    footer ul li {
+        display: block;
+        padding: 4%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    footer label {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .footer form {
+        padding: 50px 0;
+        text-align: center;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    footer input {
+        margin: 5% auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        width: 80%;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1084px) {
+    .winner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .log-facebook {
+        width: 100%;
+        padding: 15px;
+    }
+    .pop-up input {
+        width: 85%;
+    }
+
+    .login {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .page-six ul {
+        text-align: center;
+        width: 40%;
+        border: none;
+        /* border-radius: 50px; */
+        padding: 30px;
+        /* margin-bottom: 80px; */
+        margin: auto;
+    }
+
+
+    .arrow-1,.arrow-2 {
+        display: none;
+    }
+
+    .book, .mixe {
+        display: block;
+    }
+
+    .calc, .cup {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 414px) {
+
+
+    .nav-burger h1 a {
+        position: relative;
+        top: -15px;
+        right: -40%;
+        font-size: 15px;
+    }
+
+        /*POP UP*/
+    .pop-up {
+        top: 2vh;
+        left: 7%;
+        padding: 70px 20px;
+        z-index: 99999;
+        font-size: 1.2em;
+        background: #fff;
+        color: #000;
+        width: 73%;
+    }
+
+    .pop-up input {
+        width: 70%;
+        border-radius: 15px;
+    }
+
+    .log-facebook {
+        font-family: helvetica;
+        background-color: #3B5998;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 19%;
+        border: none;
+    }
+
+    .login {
+        background-color: #fe5f5b;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 20px;
+        margin: 25px auto;
+        border: none;
+        width: 80%;
+    }
+
+    /*SLIDE*/
+    .content-s1 h1 {
+        padding: 27vh 0 2vh;
+    }    
+
+    .content-s1 p {
+        padding-bottom: 10vh;
+        margin: auto;
+        width: 90%;
+    }
+
+    .content-s1 img {
+        width: 40%;
+        margin: 0px 20px;
+    }
+
+    .content-s3 h1 {
+        font-family: 'Roboto-Bold';
+        font-size: 35px;
+        padding-top: 250px;
+        letter-spacing: 5px;
+    }
+
+    .content-s3 p {
+        padding: 40px;
+        width: 80%;
+        margin: auto;
+        letter-spacing: 3px;
+        line-height: 1.7;
+    }
+
+    .slide3 {
+        background: url(../img/fraise2.jpg) no-repeat;
+    }
+
+    /*PAGE TWO*/
+    .page-two {
+        display: block;
+    }
+
+    .page-two h3 {
+        bottom: 350px;
+        font-size: 30px;
+    }
+
+    .menu-1,.menu-2,.menu-3 {
+        width: 100%; 
+        height: 30vh;
+    }
+
+    /*PAGE THREE*/
+    .info h2 {
+        font-size: 1.4em;
+    }
+
+    /*PAGE SIX*/
+    .page-six {
+        text-align: center;
+    }
+
+    .page-six h1 {
+        font-size: 20px;
+    }
+
+    .page-six ul li {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    /*PAGE SEVEN*/
+    .page-seven img {
+        padding-bottom: 50px;
+    }
+
+    /*PAGE EIGHT*/
+    .concours img {
+        padding: 10px;
+        position: relative;
+        top: -60px;
+    }
+
+    .concours p {
+        position: relative;
+        top: -65px;
+        font-weight: bold;
+        width: 250px;
+    }
+
+    .produits section article {
+        padding: 5%;
+    }
+
+    /*FOOTER*/
+    .social {
+        float: none;
+        margin-right: 0;
+    }
+
+    footer img {
+        display: inline-table;
+        padding: 25px 25px 20px 25px;
+    }
+
+    footer ul li {
+        display: block;
+        padding: 5% 0 15%;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .nav-burger {
+        height: 75px;
+    }
+
+    .burger-menu {
+        position: relative;
+        top: 15px;
+    }
+
+    .burger::after {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .burger::before {
+        position: absolute;
+        top: 10px;
+    }
+
+    .nav-burger h1 a {
+        display: none;
+    }
+
+    .content-s2 p {
+        width: 80%;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .content-s2 h1 {
+        text-align: center;
+        font-size: 25px;
+        padding-top: 28vh;
+        padding-bottom: 5vh;
+        width: 95%;
+        margin: auto;
+    }
+
+    .content-s3 h1 {
+        font-size: 25px;
+        padding-top: 160px;
+        letter-spacing: 5px;
+        line-height: 1.4;
+    }
+
+    .content-s3 p {
+        font-size: 15px;
+    }
+
+    /*PAGE THREE*/
+    .page-two h3 {
+        bottom: 250px;
+        font-size: 24px;
+    }
+
+    .info p {
+        letter-spacing: 0;
+    }
+
+    /*PAGE SIX*/
+    .page-six {
+        text-align: center;
+    }
+
+    .page-six ul {
+        width: 80%;
+    }
+
+    .page-six img {
+        width: 100px;
+        padding: 50px;
+    }
+
+    .page-six ul li p {
+        width: auto;
+        padding: 0;
+    }
+
+    /*PAGE SEVEN*/
+    .page-seven img {
+        width: 100%;
+    }
+
+    /*PAGE EIGHT*/
+    .concours p {
+        position: relative;
+        top: -65px;
+        font-weight: bold;
+        width: 197px;
+    }
+
+    .produits img {
+        width: 70%;
+    }
+
+    .produits section article p {
+        letter-spacing: 2px;
+        line-height: 1.5;
+        width: 85%;
+        margin: auto;
+    }
+
+    .produits section article {
+        display: inline-table;
+        width: 320px;
+        padding: 8% 0;
+    }
+}
+
+@media screen and (min-width: 275px) and (max-width: 340px) {
+    .concours img {
+        padding: 0px;
+        position: relative;
+        top: -60px;
+    }
+
+    .concours p {
+        position: relative;
+        top: -65px;
+        font-weight: bold;
+        width: 159px;
+        font-size: 15px;
+    }
+
+    .produits img {
+        width: 60%;
+    }
+
+    .produits section article {
+        width: 90%;
+    }
+}
