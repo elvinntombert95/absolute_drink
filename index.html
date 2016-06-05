@@ -298,10 +298,10 @@
           $(function () {
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 5) {
-                      $('header').css({"background-color": "#404040" , "-webkit-transition": "0.5s" , "opacity": "0.9" , "height" : "80px" , "z-index" : "100"});
+                      $('header').css({"background-color": "#404040" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s" , "opacity": "0.9" , "height" : "80px" , "z-index" : "100"});
   
-                      $('.ul-2').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s"});
-                      $('.ul-1').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s"});
+                      $('.ul-2').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s"});
+                      $('.ul-1').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s"});
                   } else {
                       $('header').css({"background": "none" , "height" : "115px"});
                       $('.nav-burger').css({"background": "none" , "font-weight": "normal"});
