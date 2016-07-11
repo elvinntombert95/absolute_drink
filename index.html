@@ -27,35 +27,35 @@
     <!-- /FADE PAGE -->
 </head>
 <body class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="800">
-    <main role="main">
-        <header class="header"><!-- DEBUT HEADER -->
-            <nav class="desktop">
-                <ul class="ul-1">
-                    <li><a href="">ABSOLUTE DRINK</a></li>
-                </ul>
-                <ul class="ul-2">
-                    <li><a href="">L'application</a></li>
-                    <li><a href="">Actualités</a></li>
-                    <li><a href="">Nos recettes</a></li>
-                    <li class="connect">Connexion</li>
-                </ul>
-            </nav>    
+    <header class="header"><!-- DEBUT HEADER -->
+        <nav class="desktop">
+            <ul class="ul-1">
+                <li><a href="">ABSOLUTE DRINK</a></li>
+            </ul>
+            <ul class="ul-2">
+                <li><a href="">L'application</a></li>
+                <li><a href="">Actualités</a></li>
+                <li><a href="">Nos recettes</a></li>
+                <li class="connect">Connexion</li>
+            </ul>
+        </nav>    
 
-            <nav class="nav-burger">
-                <div class="burger-menu">
-                    <div class="burger">
-                        <ul class="menu-liste">
-                            <li><a href="#">L'application</a></li>
-                            <li><a href="#">Actualités</a></li>
-                            <li><a href="#">Nos recettes</a></li>
-                            <li class="connect"><a href="#">Connexion</a></li>
-                        </ul>
-                    </div>
+        <nav class="nav-burger">
+            <div class="burger-menu">
+                <div class="burger">
+                    <ul class="menu-liste">
+                        <li><a href="#">L'application</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Nos recettes</a></li>
+                        <li class="connect"><a href="#">Connexion</a></li>
+                    </ul>
                 </div>
-                <h1><a href="">ABSOLUTE DRINK</a></h1>
-            </nav>
-        </header><!-- FIN HEADER -->
+            </div>
+            <h1><a href="">ABSOLUTE DRINK</a></h1>
+        </nav>
+    </header><!-- FIN HEADER -->
 
+    <main class="main">
         <!-- POP UP CONNECT -->
         <div class="voile"></div>
             <div class="pop-up">
@@ -275,7 +275,6 @@
                     $('body').css({"overflow":"initial"});        
                 })
         });
-
     /*POP UP*/
       $('.pop-up').hide();
       $('.voile').hide();
@@ -291,17 +290,16 @@
                 $('.voile').fadeOut(800);
             });
         });
-
     /*HEADER BACKGROUND*/
-    (function ($) {
+        (function ($) {
         $(document).ready(function(){
           $(function () {
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 5) {
-                      $('header').css({"background-color": "#404040" , "-webkit-transition": "0.5s" , "opacity": "0.9" , "height" : "80px" , "z-index" : "100"});
+                      $('header').css({"background-color": "#404040" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s" , "opacity": "0.9" , "height" : "80px" , "z-index" : "100"});
   
-                      $('.ul-2').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s"});
-                      $('.ul-1').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s"});
+                      $('.ul-2').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s"});
+                      $('.ul-1').css({"padding" : "30px 50px" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s"});
                   } else {
                       $('header').css({"background": "none" , "height" : "115px"});
                       $('.nav-burger').css({"background": "none" , "font-weight": "normal"});
