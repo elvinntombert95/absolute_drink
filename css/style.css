@@ -339,7 +339,7 @@ nav ul li {
     top: 0px; 
     left: 0px; 
     width: 100%;
-    height: 867px; 
+    height: 110vh; 
     overflow: hidden; 
     visibility: hidden;
 }
@@ -364,14 +364,17 @@ nav ul li {
 
     .slide1 {
         background: url(../img/blue.jpg) no-repeat;
+        background-size: cover;
     }
 
     .slide2 {
         background: url(../img/red2.jpg) no-repeat;
+        background-size: cover;
     }
 
     .slide3 {
         background: url(../img/fraise.jpg) no-repeat;
+        background-size: cover;
     }
 
 
@@ -444,6 +447,7 @@ nav ul li {
 .page-two {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .page-two a {
@@ -452,6 +456,7 @@ nav ul li {
     font-size: 20px;
     font-style: italic;
     font-family: serif;
+    width: 100%;
 }
 
 .page-two h3 {
@@ -462,7 +467,7 @@ nav ul li {
 }
 
 .page-two img {
-    width: 101%;
+    width: 100%;
 }
 
 .menu-1,.menu-2,.menu-3 {
@@ -486,6 +491,8 @@ nav ul li {
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -khtml-filter: grayscale(100%);
+
+    width: 100%;
 }
 
 .menu-1:not(:hover),.menu-2:not(:hover),.menu-3:not(:hover) {
@@ -495,6 +502,8 @@ nav ul li {
     -moz-transition:0.5s;
     -ms-transition:0.5s;
     -khtml-transition:0.5s;
+
+    width: 100%;
 }
 
 
@@ -618,6 +627,11 @@ nav ul li {
     .phone {
         margin: auto;
     }
+
+
+
+
+
 
 .arrow-1,.arrow-2 {
     width: 20%;
@@ -757,36 +771,8 @@ footer img {
     margin-right: 200px;
 }
 
-footer small {
-        float: left;
-    color: white;
-    letter-spacing: 1.1px;
-    font-style: italic;
-    font-weight: bold;
-    padding: 5px;
-}
 
 /*-------------RESPONSIVE---------------*/
-@media screen and (min-width: 1400px) and (max-width: 2800px) {
-    main {
-        width: 1366px;
-        margin: auto;
-        display: block;
-    }
-
-    .winner {
-        z-index: -1000;
-        position: absolute;
-        bottom: 12%;
-        left: 46%;
-        width: 210px;
-    }
-
-    .page-two img {
-        width: 105.5%;
-    }
-}
-
 @media screen and (max-width: 1175px) {
     /*HEADER*/
     .desktop {
@@ -1086,164 +1072,13 @@ footer small {
 
 }
 
-@media screen and (max-width: 435px) {
-.nav-burger h1 a {
-        position: relative;
-        top: -15px;
-        right: -40%;
-        font-size: 15px;
-    }
+@media screen and (max-width: 768px) {
 
-        /*POP UP*/
-    .pop-up {
-        top: 2vh;
-        left: 7%;
-        padding: 70px 20px;
-        z-index: 99999;
-        font-size: 1.2em;
-        background: #fff;
-        color: #000;
-        width: 73%;
-    }
-
-    .pop-up input {
-        width: 70%;
-        border-radius: 15px;
-    }
-
-    .log-facebook {
-        font-family: helvetica;
-        background-color: #3B5998;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 30px;
-        padding: 10px 19%;
-        border: none;
-    }
-
-    .login {
-        background-color: #fe5f5b;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 30px;
-        padding: 20px;
-        margin: 25px auto;
-        border: none;
-        width: 80%;
-    }
-
-    /*SLIDE*/
-    .content-s1 h1 {
-        padding: 27vh 0 2vh;
-    }    
-
-    .content-s1 p {
-        padding-bottom: 10vh;
-        margin: auto;
-        width: 90%;
-    }
-
-    .content-s1 img {
-        width: 40%;
-        margin: 0px 20px;
-    }
-
-    .content-s3 h1 {
-        font-family: 'Roboto-Bold';
-        font-size: 35px;
-        padding-top: 250px;
-        letter-spacing: 5px;
-    }
-
-    .content-s3 p {
-        padding: 40px;
-        width: 80%;
-        margin: auto;
-        letter-spacing: 3px;
-        line-height: 1.7;
-    }
-
-    .slide3 {
-        background: url(../img/fraise2.jpg) no-repeat;
-    }
-
-    /*PAGE TWO*/
-    .page-two {
-        display: block;
-    }
-
-    .page-two h3 {
-        bottom: 350px;
-        font-size: 30px;
-    }
-
-    .menu-1,.menu-2,.menu-3 {
-        width: 100%; 
-        height: 30vh;
-    }
-
-    /*PAGE THREE*/
-    .info h2 {
-        font-size: 1.4em;
-    }
-
-    /*PAGE SIX*/
-    .page-six {
-        text-align: center;
-    }
-
-    .page-six h1 {
-        font-size: 20px;
-    }
-
-    .page-six ul li {
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    /*PAGE SEVEN*/
-    .page-seven img {
-        padding-bottom: 50px;
-    }
-
-    /*PAGE EIGHT*/
-    .concours img {
-        padding: 10px;
-        position: relative;
-        top: -60px;
-    }
-
-    .concours p {
-        position: relative;
-        top: -65px;
-        font-weight: bold;
-        width: 250px;
-    }
-
-    .produits section article {
-        padding: 5%;
-    }
-
-    /*FOOTER*/
-    .social {
-        float: none;
-        margin-right: 0;
-    }
-
-    footer img {
-        display: inline-table;
-        padding: 25px 25px 20px 25px;
-    }
-
-    footer ul li {
-        display: block;
-        padding: 5% 0 15%;
-    }
 }
 
 @media screen and (max-width: 414px) {
+
+
     .nav-burger h1 a {
         position: relative;
         top: -15px;
