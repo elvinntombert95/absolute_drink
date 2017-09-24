@@ -364,14 +364,17 @@ nav ul li {
 
     .slide1 {
         background: url(../img/blue.jpg) no-repeat;
+        background-size: cover;
     }
 
     .slide2 {
         background: url(../img/red2.jpg) no-repeat;
+        background-size: cover;
     }
 
     .slide3 {
         background: url(../img/fraise.jpg) no-repeat;
+        background-size: cover;
     }
 
 
@@ -444,6 +447,7 @@ nav ul li {
 .page-two {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .page-two a {
@@ -452,6 +456,7 @@ nav ul li {
     font-size: 20px;
     font-style: italic;
     font-family: serif;
+    width: 100%;
 }
 
 .page-two h3 {
@@ -462,7 +467,7 @@ nav ul li {
 }
 
 .page-two img {
-    width: 101%;
+    width: 100%;
 }
 
 .menu-1,.menu-2,.menu-3 {
@@ -486,6 +491,8 @@ nav ul li {
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -khtml-filter: grayscale(100%);
+
+    width: 100%;
 }
 
 .menu-1:not(:hover),.menu-2:not(:hover),.menu-3:not(:hover) {
@@ -495,6 +502,8 @@ nav ul li {
     -moz-transition:0.5s;
     -ms-transition:0.5s;
     -khtml-transition:0.5s;
+
+    width: 100%;
 }
 
 
@@ -618,6 +627,11 @@ nav ul li {
     .phone {
         margin: auto;
     }
+
+
+
+
+
 
 .arrow-1,.arrow-2 {
     width: 20%;
